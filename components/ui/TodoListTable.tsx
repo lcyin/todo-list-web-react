@@ -10,10 +10,6 @@ import {
 import { cn } from "@/lib/utils";
 import { transactionCategoryStyles } from "@/constants";
 
-interface TodoListProps {
-  items: { id: number; title: string; completed: boolean }[];
-}
-
 const CategoryBadge = ({ category }: CategoryBadgeProps) => {
   const { backgroundColor, borderColor, textColor, chipBackgroundColor } =
     transactionCategoryStyles[

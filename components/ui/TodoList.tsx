@@ -1,10 +1,6 @@
 import React from "react";
 import TodoListTable from "./TodoListTable";
 
-interface TodoListProps {
-  items: { id: number; title: string; completed: boolean }[];
-}
-
 const TodoList = ({ items }: TodoListProps) => {
   return (
     <section className="recent-transactions">

@@ -326,3 +326,13 @@ declare interface getBankProps {
 declare interface getBankByAccountIdProps {
   accountId: string;
 }
+
+declare interface TodoItem {
+  id: number;
+  title: string;
+  completed: boolean;
+}
+
+declare interface TodoListProps {
+  items: TodoItem[];
+}
