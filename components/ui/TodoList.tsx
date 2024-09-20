@@ -1,5 +1,6 @@
 import React from "react";
 import TodoListTable from "./TodoListTable";
+import TodoForm from "./TodoForm";
 
 const TodoList = ({ items }: TodoListProps) => {
   return (
@@ -8,6 +9,7 @@ const TodoList = ({ items }: TodoListProps) => {
         <h2 className="recent-transactions-label">Todo Lists</h2>
       </header>
       <TodoListTable items={items} />
+      <TodoForm />
     </section>
   );
 };

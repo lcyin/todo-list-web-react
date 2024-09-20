@@ -31,6 +31,7 @@ const TodoListTable = ({ items }: TodoListProps) => {
         <TableRow>
           <TableHead className="px-2">No.</TableHead>
           <TableHead className="px-2">Title</TableHead>
+          <TableHead className="px-2">Description</TableHead>
           <TableHead className="px-2">Completed</TableHead>
         </TableRow>
       </TableHeader>
@@ -51,6 +52,13 @@ const TodoListTable = ({ items }: TodoListProps) => {
                   {item.title}
                 </h1>
               </div>
+            </TableCell>
+            <TableCell className="pl-2 pr-10">
+              <div className="flex items-center gap-3">
+                <h1 className="text-14 truncate font-semibold text-[#344054]">
+                  {item.description}
+                </h1>
+              </div>{" "}
             </TableCell>
             <TableCell className="pl-2 pr-10">
               <CategoryBadge category={item.completed ? "Yes" : "No"} />
